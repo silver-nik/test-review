@@ -44,34 +44,24 @@ class ReviewForm implements ReviewFormInterface {
     public function render() {
         echo <<<FORM
 
-            <!DOCTYPE html>
-            <html lang="ru">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Document</title>
-            </head>
-            <body>
-                <form method="POST" action="">
-                    <p>Оцените качество обслуживания 1, 2, 3, 4, 5</p>
-                    <div class="rating">
-                        <input type="radio" id="rating1" name="rating" value="1">
-                        <label for="rating1">1</label>
-                        <input type="radio" id="rating2" name="rating" value="2">
-                        <label for="rating2">2</label>
-                        <input type="radio" id="rating3" name="rating" value="3">
-                        <label for="rating3">3</label>
-                        <input type="radio" id="rating4" name="rating" value="4">
-                        <label for="rating4">4</label>
-                        <input type="radio" id="rating5" name="rating" value="5">
-                        <label for="rating5">5</label>
-                    </div>
-                    <p>При желании оставьте комментарий к отзыву:</p>
-                    <textarea name="review" placeholder="Оставить комментарий к оценке (необязательное)"></textarea><br><br>
-                    <button type="submit">Оставить отзыв</button>
-                </form>
-            </body>
-            </html>
+            <form method="POST" action="">
+                <p>Оцените качество обслуживания 1, 2, 3, 4, 5</p>
+                <div class="rating">
+                    <input type="radio" id="rating1" name="rating" value="1">
+                    <label for="rating1">1</label>
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3">3</label>
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5">5</label>
+                </div>
+                <p>При желании оставьте комментарий к отзыву:</p>
+                <textarea name="review" placeholder="Оставить комментарий к оценке (необязательное)"></textarea><br><br>
+                <button type="submit">Оставить отзыв</button>
+            </form>
 
         FORM;
     }
